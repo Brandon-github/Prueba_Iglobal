@@ -4,7 +4,7 @@ Desarrollo de prueba frontend para la demostracion de conocimientos.
 
 ## Clonar
 
-Para clonar el repositorio usa el siguien comando
+Para clonar el repositorio usa el siguiente comando
 
 ### Https
 ```shell
@@ -65,7 +65,7 @@ yarn run build
 
 ## Preview
 
-Usa el siguiente comando para previsualizar el proyecto un servidor simulado
+Usa el siguiente comando para previsualizar el proyecto en un servidor simulado
 
 # npm
 ```shell
@@ -94,7 +94,7 @@ npm run preview
 
 ## Servidor
 
-Si quieres visualizar el proyecto monetado en un servidor puedes hacerlo desde [aquí](https://prueba-iglobal.vercel.app/).
+Si quieres visualizar el proyecto montado en un servidor puedes hacerlo desde [aquí](https://prueba-iglobal.vercel.app/).
 
 
 
