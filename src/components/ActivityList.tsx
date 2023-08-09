@@ -15,13 +15,13 @@ const ActivityList = ({type}: {type: ActivityType}) => {
 
   return (
     <div className="w-full h-full grid grid-cols-3 gap-5 max-sm:grid-cols-1">
-      {activities.map(({ title, timeframes }, index) => (
+      {activities.map(({ title, timeframes, color, icon }) => (
         <ActivityCard 
           title={title} 
           timeframes={timeframes} 
           type={type} 
-          color={colors[index]} 
-          icon={index}
+          color={color}
+          icon={icon}
           key={uuid()}
         />
       ))}
