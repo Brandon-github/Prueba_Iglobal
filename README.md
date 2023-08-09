@@ -92,6 +92,10 @@ npm run preview
 
 - [Api](https://randomuser.me/)
 
+## Servidor
+
+Si quieres visualizar el proyecto monetado en un servidor puedes hacerlo desde [aquí](https://prueba-iglobal.vercel.app/).
+
 
 
 
