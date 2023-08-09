@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Activity } from "../interfaces/Activity";
 import { IconEllipsis, IconExercise, IconPlay, IconSelfCare, IconSocial, IconStudy, IconWork } from './icons/Icon'
 
@@ -20,20 +19,20 @@ const ActivityCard = ({ title, timeframes, type, color, icon }: Activity) => {
   } 
 
   return (
-    <div className={`bg-custom-card-${color ?? "one"} relative overflow-hidden rounded-xl max-sm:h-[170px] group`}>
+    <div className={`${color} relative overflow-hidden rounded-xl max-sm:h-[170px] group`}>
       {setIcon(icon ?? 0)}
       <div className="w-full h-3/4 bg-custom-secondary group-hover:bg-custom-secondary-active absolute bottom-0 rounded-lg p-5 transition-colors ease-out duration-150">
         <div className="flex justify-between items-center mb-4">
-          <span className="text-custom-primary">{title} - {color}</span>
+          <span className="text-custom-primary">{title}</span>
           <button className="w-fit h-fit">
-            <IconEllipsis className="w-fit h-fit fill-[var(--text-secondary)] hover:fill-custom-primary transition ease-in-out duration-100" />
+            <IconEllipsis className="w-fit h-fit fill-custom-primary hover:fill-custom-primary transition ease-in-out duration-100" />
           </button>
         </div>
         <div className="flex flex-col max-sm:flex-row max-sm:items-center max-sm:justify-between">
           <span className="text-custom-primary text-4xl font-light">
             {timeframes[type ?? "daily"].current}hrs
           </span>
-          <span className="text-custom-primary font-extralight">
+          <span className="text-custom-primary font-extralight text-md max-md:text-sm">
             Last week - {timeframes[type ?? "daily"].previous} hrs
           </span>
         </div>
