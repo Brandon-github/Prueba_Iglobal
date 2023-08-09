@@ -17,4 +17,6 @@ export interface Activity {
     }
   },
   type?: ActivityType;
+  color: string;
+  icon?: number;
 }
