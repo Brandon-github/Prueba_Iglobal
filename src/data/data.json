@@ -1,7 +1,7 @@
 [
   {
     "title": "Work",
-    "color": "one",
+    "color": "bg-custom-card-one",
     "icon": 0,
     "timeframes": {
       "daily": {
@@ -20,7 +20,7 @@
   },
   {
     "title": "Play",
-    "color": "two",
+    "color": "bg-custom-card-two",
     "icon": 1,
     "timeframes": {
       "daily": {
@@ -39,7 +39,7 @@
   },
   {
     "title": "Study",
-    "color": "three",
+    "color": "bg-custom-card-three",
     "icon": 2,
     "timeframes": {
       "daily": {
@@ -58,7 +58,7 @@
   },
   {
     "title": "Exercise",
-    "color": "four",
+    "color": "bg-custom-card-four",
     "icon": 3,
     "timeframes": {
       "daily": {
@@ -77,7 +77,7 @@
   },
   {
     "title": "Social",
-    "color": "five",
+    "color": "bg-custom-card-five",
     "icon": 4,
     "timeframes": {
       "daily": {
@@ -96,7 +96,7 @@
   },
   {
     "title": "Self Care",
-    "color": "six",
+    "color": "bg-custom-card-six",
     "icon": 5,
     "timeframes": {
       "daily": {

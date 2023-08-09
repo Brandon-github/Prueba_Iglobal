@@ -19,7 +19,7 @@ const ActivityCard = ({ title, timeframes, type, color, icon }: Activity) => {
   } 
 
   return (
-    <div className={`${"bg-custom-card-two"} relative overflow-hidden rounded-xl max-sm:h-[170px] group`}>
+    <div className={`${color ?? "bg-custom-card-two"} relative overflow-hidden rounded-xl max-sm:h-[170px] group`}>
       {setIcon(icon ?? 0)}
       <div className="w-full h-3/4 bg-custom-secondary group-hover:bg-custom-secondary-active absolute bottom-0 rounded-lg p-5 transition-colors ease-out duration-150">
         <div className="flex justify-between items-center mb-4">
