@@ -6,8 +6,6 @@ import { v4 as uuid } from 'uuid'
 
 const ActivityList = ({type}: {type: ActivityType}) => {
   const [activities, setActivities] = useState<Activity[]>([])
-
-  const colors = ["one", "two", "three", "four", "five", "size"]
   
   useEffect(() => {
     setActivities(activitiesData)
