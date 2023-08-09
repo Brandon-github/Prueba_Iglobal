@@ -1,5 +1,6 @@
+import { ReactNode } from "react"
 
-const Container = ({ children }: any) => {
+const Container = ({ children }: { children: ReactNode }) => {
   return (
     <div className="min-h-screen bg-custom-primary overflow-x-hidden">
       { children }

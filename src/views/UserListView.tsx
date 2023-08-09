@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react"
+import { ChangeEvent, useEffect, useState } from "react"
 import Container from "../layouts/Container"
 import { User } from "../interfaces/User"
 import { getUsers } from "../fetch/fetchUsers"
-import { Link } from "react-router-dom"
 import UserList from "../components/UserList"
 
 
@@ -19,7 +18,7 @@ const UserListView = () => {
     setSearchUsers(data)
   }
 
-  const handleSeachChange = (e: any): void => {
+  const handleSeachChange = (e: ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target
 
     if (name === "search") {
@@ -27,7 +26,7 @@ const UserListView = () => {
 
       if (value !== "") {
         const filter = users.filter((user) => {
-          let fullname = `${user.name.first} ${user.name.last}`
+          const fullname = `${user.name.first} ${user.name.last}`
           if (fullname.toLocaleLowerCase().includes(value.toLocaleLowerCase())) {
             return user
           }

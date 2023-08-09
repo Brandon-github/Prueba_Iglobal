@@ -5,8 +5,8 @@ const ActivityCard = ({ title, timeframes, type, color, icon }: Activity) => {
 
 
   const setIcon = (index: number) => {
-    let style = "absolute -top-1 right-3 text-gray-600 opacity-[.15]"
-    let icons = [
+    const style = "absolute -top-1 right-3 text-gray-600 opacity-[.15]"
+    const icons = [
       <IconWork className={style} />,
       <IconPlay className={style} />,
       <IconStudy className={style} />,
