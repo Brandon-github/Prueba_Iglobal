@@ -5,13 +5,13 @@ import HeaderCard from "../layouts/HeaderCard"
 import { ActivityType } from "../interfaces/Activity"
 import { useParams } from 'react-router-dom'
 
-const HomeView = () => {
-  const [activityType, setactivityType] = useState<ActivityType>("daily")
+const UserView = () => {
+  const [activityType, setActivityType] = useState<ActivityType>("daily")
 
   const { name, picture } = useParams()
 
   const changeActivityType = (type: ActivityType) => {
-    setactivityType(type)
+    setActivityType(type)
   }
 
   return (
@@ -48,4 +48,4 @@ const HomeView = () => {
   )
 }
 
-export default HomeView
+export default UserView
